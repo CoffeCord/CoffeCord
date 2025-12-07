@@ -53,7 +53,7 @@ const TrustedRolesIds = [
     VC_DONOR_ROLE_ID, // Vencord Donor
     COFFECORD_TEAM, // Equicord Team
     DONOR_ROLE_ID, // Equicord Donor
-    CONTRIB_ROLE_ID, // Equicord Contributor
+    CONTRIB_ROLE_ID, // Coffecord Developer
     COFFEBOP_CONTRIB_ROLE_ID, // Equibop Contributor
     VENCORD_CONTRIB_ROLE_ID, // Vencord Contributor
 ];

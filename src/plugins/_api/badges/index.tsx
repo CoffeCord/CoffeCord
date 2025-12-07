@@ -45,7 +45,7 @@ const ContributorBadge: ProfileBadge = {
 };
 
 const EquicordContributorBadge: ProfileBadge = {
-    description: "Equicord Contributor",
+    description: "Coffecord Developer",
     iconSrc: EQUICORD_CONTRIBUTOR_BADGE,
     position: BadgePosition.START,
     shouldShow: ({ userId }) => shouldShowEquicordContributorBadge(userId),

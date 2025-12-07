@@ -24,13 +24,13 @@ const settings = definePluginSettings({
     },
     showEquicordContributor: {
         type: OptionType.BOOLEAN,
-        description: "Enable to show Equicord Contributor badges in chat.",
+        description: "Enable to show Coffecord Developer badges in chat.",
         hidden: true,
         default: true
     },
     EquicordContributorPosition: {
         type: OptionType.NUMBER,
-        description: "The position of the Equicord Contributor badge.",
+        description: "The position of the Coffecord Developer badge.",
         hidden: true,
         default: 1
     },
@@ -94,7 +94,7 @@ export default settings;
 const BadgeSettings = () => {
     const [images, setImages] = useState([
         { src: "https://images.equicord.org/api/files/raw/0199e71a-5555-7000-aafb-a07a355d9b28", shown: settings.store.showEquicordDonor, title: "Equicord donor badges", key: "EquicordDonor", position: settings.store.EquicordDonorPosition },
-        { src: "https://public-blob.squarecloud.dev/549916363158716421/equicord/favicon.png", shown: settings.store.showEquicordContributor, title: "Equicord contributor badge", key: "EquicordContributer", position: settings.store.EquicordContributorPosition },
+        { src: "https://public-blob.squarecloud.dev/549916363158716421/equicord/favicon.png", shown: settings.store.showEquicordContributor, title: "Coffecord Developer badge", key: "EquicordContributer", position: settings.store.EquicordContributorPosition },
         { src: "https://cdn.discordapp.com/emojis/1026533070955872337.png", shown: settings.store.showVencordDonor, title: "Vencord donor badges", key: "VencordDonor", position: settings.store.VencordDonorPosition },
         { src: "https://cdn.discordapp.com/emojis/1092089799109775453.png", shown: settings.store.showVencordContributor, title: "Vencord contributor badge", key: "VencordContributer", position: settings.store.VencordContributorPosition },
         { src: "https://cdn.discordapp.com/badge-icons/bf01d1073931f921909045f3a39fd264.png", shown: settings.store.showDiscordProfile, title: "Discord profile badges (HypeSquad, Discord Staff, Active Developer, etc.)", key: "DiscordProfile", position: settings.store.DiscordProfilePosition },
