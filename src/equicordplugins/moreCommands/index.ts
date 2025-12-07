@@ -18,7 +18,7 @@
 
 import { ApplicationCommandInputType, ApplicationCommandOptionType, findOption, OptionalMessageOption, RequiredMessageOption, sendBotMessage } from "@api/Commands";
 import { addMessagePreEditListener, addMessagePreSendListener, MessageObject, removeMessagePreEditListener, removeMessagePreSendListener } from "@api/MessageEvents";
-import { Devs, EquicordDevs } from "@utils/constants";
+import { Devs, CoffecordDevs } from "@utils/constants";
 import { sendMessage } from "@utils/discord";
 import definePlugin from "@utils/types";
 import { UserStore } from "@webpack/common";
@@ -28,7 +28,7 @@ import { fromMorse, getCuteAnimeBoys, getCuteNeko, getCutePats, isMorse, makeFre
 export default definePlugin({
     name: "MoreCommands",
     description: "Adds various fun and useful commands",
-    authors: [Devs.Arjix, Devs.amy, Devs.Samu, EquicordDevs.zyqunix, EquicordDevs.ShadyGoat, Devs.thororen, Devs.Korbo, Devs.nyx, Devs.amy],
+    authors: [Devs.Arjix, Devs.amy, Devs.Samu, CoffecordDevs.zyqunix, CoffecordDevs.ShadyGoat, Devs.thororen, Devs.Korbo, Devs.nyx, Devs.amy],
     settings,
     commands: [
         {

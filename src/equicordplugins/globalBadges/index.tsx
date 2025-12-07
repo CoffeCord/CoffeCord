@@ -5,7 +5,7 @@
  */
 
 import { addProfileBadge, BadgePosition, ProfileBadge, removeProfileBadge } from "@api/Badges";
-import { Devs, EquicordDevs } from "@utils/constants";
+import { Devs, CoffecordDevs } from "@utils/constants";
 import definePlugin from "@utils/types";
 import { React } from "@webpack/common";
 
@@ -23,7 +23,7 @@ const Badge: ProfileBadge = {
 export default definePlugin({
     name: "GlobalBadges",
     description: "Adds global badges from other client mods",
-    authors: [Devs.HypedDomi, EquicordDevs.Wolfie],
+    authors: [Devs.HypedDomi, CoffecordDevs.Wolfie],
     settings,
     start: () => addProfileBadge(Badge),
     stop: () => removeProfileBadge(Badge),

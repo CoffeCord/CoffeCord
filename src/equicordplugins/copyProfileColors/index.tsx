@@ -6,7 +6,7 @@
 
 import { NavContextMenuPatchCallback } from "@api/ContextMenu";
 import { copyToClipboard } from "@utils/clipboard";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import definePlugin from "@utils/types";
 import { Menu, Toasts, UserProfileStore } from "@webpack/common";
 
@@ -91,7 +91,7 @@ const userContextMenuPatch: NavContextMenuPatchCallback = (children, { user }) =
 export default definePlugin({
     name: "CopyProfileColors",
     description: "A plugin to copy people's profile gradient colors to clipboard.",
-    authors: [EquicordDevs.Crxa, EquicordDevs.Cortex],
+    authors: [CoffecordDevs.Crxa, CoffecordDevs.Cortex],
     contextMenus: {
         "user-context": userContextMenuPatch,
         "user-profile-actions": userContextMenuPatch

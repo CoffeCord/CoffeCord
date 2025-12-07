@@ -18,16 +18,16 @@
 
 export const REACT_GLOBAL = "Vencord.Webpack.Common.React";
 
-// Equicord
+// Coffecord (usando infraestrutura Equicord temporariamente - sem servidor/GitHub próprio)
 export const SUPPORT_CHANNEL_ID = "1297590739911573585";
 export const GUILD_ID = "1173279886065029291";
 export const DONOR_ROLE_ID = "1173316879083896912";
 export const CONTRIB_ROLE_ID = "1222677964760682556";
-export const EQUICORD_TEAM = "1173520023239786538";
-export const EQUICORD_HELPERS = "1326406112144265257";
-export const EQUIBOP_CONTRIB_ROLE_ID = "1287079931645263968";
+export const COFFECORD_TEAM = "1173520023239786538";
+export const COFFECORD_HELPERS = "1326406112144265257";
+export const COFFEBOP_CONTRIB_ROLE_ID = "1287079931645263968";
 export const VENCORD_CONTRIB_ROLE_ID = "1173343399470964856";
-export const EQUIBOT_USER_ID = "1243063117852835941";
+export const COFFEBOT_USER_ID = "1243063117852835941";
 
 // Vencord
 export const VC_SUPPORT_CHANNEL_ID = "1026515880080842772";
@@ -44,7 +44,7 @@ export const VC_SUPPORT_CHANNEL_IDS = [VC_SUPPORT_CHANNEL_ID, VESKTOP_SUPPORT_CH
 export const GUILD_IDS = [GUILD_ID, VC_GUILD_ID];
 export const SUPPORT_CHANNEL_IDS = [SUPPORT_CHANNEL_ID, VC_SUPPORT_CHANNEL_ID];
 export const DONOR_ROLE_IDS = [DONOR_ROLE_ID, VC_DONOR_ROLE_ID];
-export const CONTRIB_ROLE_IDS = [CONTRIB_ROLE_ID, EQUIBOP_CONTRIB_ROLE_ID, VENCORD_CONTRIB_ROLE_ID, VC_CONTRIB_ROLE_ID];
+export const CONTRIB_ROLE_IDS = [CONTRIB_ROLE_ID, COFFEBOP_CONTRIB_ROLE_ID, VENCORD_CONTRIB_ROLE_ID, VC_CONTRIB_ROLE_ID];
 
 const platform = navigator.platform.toLowerCase();
 export const IS_WINDOWS = platform.startsWith("win");
@@ -626,16 +626,48 @@ export const Devs = /* #__PURE__*/ Object.freeze({
         name: "thororen",
         id: 848339671629299742n
     },
+    CoffecordDev: {
+        name: "CoffecordDev", // TODO: Adicionar nome real
+        id: 549916363158716421n
+    },
+    agprincipal: {
+        name: "CoffecordContributor1", // TODO: Adicionar nome real
+        id: 302788516679516161n
+    },
+    ag: {
+        name: "CoffecordContributor2", // TODO: Adicionar nome real
+        id: 1099233427389169665n
+    },
+    CoffecordContributor: {
+        name: "CoffecordContributor3", // TODO: Adicionar nome real
+        id: 1288832011452153910n
+    },
     alfred: {
         name: "alfred",
         id: 1038466644353232967n
     }
 } satisfies Record<string, Dev>);
 
-export const EquicordDevs = Object.freeze({
+export const CoffecordDevs = Object.freeze({
     nobody: {
         name: "nobody",
         id: 0n
+    },
+    CoffecordDev: {
+        name: "CoffecordDev", // TODO: Adicionar nome real
+        id: 549916363158716421n
+    },
+    agprincipal: {
+        name: "CoffecordContributor1", // TODO: Adicionar nome real
+        id: 302788516679516161n
+    },
+    ag: {
+        name: "CoffecordContributor2", // TODO: Adicionar nome real
+        id: 1099233427389169665n
+    },
+    CoffecordContributor: {
+        name: "CoffecordContributor3", // TODO: Adicionar nome real
+        id: 1288832011452153910n
     },
     thororen: {
         name: "thororen",
@@ -1205,9 +1237,9 @@ export const VencordDevsById = /* #__PURE__*/ (() =>
     ))
 )() as Record<string, Dev>;
 
-export const EquicordDevsById = /* #__PURE__*/ (() =>
+export const CoffecordDevsById = /* #__PURE__*/ (() =>
     Object.freeze(Object.fromEntries(
-        Object.entries(EquicordDevs)
+        Object.entries(CoffecordDevs)
             .filter(d => d[1].id !== 0n)
             .map(([_, v]) => [v.id, v] as const)
     ))

@@ -22,7 +22,7 @@ import { definePluginSettings, migratePluginSettings } from "@api/Settings";
 import { classNameFactory } from "@api/Styles";
 import { BaseText } from "@components/BaseText";
 import ErrorBoundary from "@components/ErrorBoundary";
-import { Devs, EquicordDevs } from "@utils/constants";
+import { Devs, CoffecordDevs } from "@utils/constants";
 import definePlugin, { OptionType } from "@utils/types";
 import { User } from "@vencord/discord-types";
 import { DateUtils, Flex, RelationshipStore, TooltipContainer } from "@webpack/common";
@@ -52,7 +52,7 @@ const settings = definePluginSettings({
 migratePluginSettings("SortFriends", "SortFriendRequests");
 export default definePlugin({
     name: "SortFriends",
-    authors: [Devs.Megu, EquicordDevs.CallMeGii],
+    authors: [Devs.Megu, CoffecordDevs.CallMeGii],
     description: "Sorts friend requests by date of receipt",
     isModified: true,
     settings,

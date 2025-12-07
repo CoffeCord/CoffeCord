@@ -7,7 +7,7 @@
 import { addChatBarButton, removeChatBarButton } from "@api/ChatButtons";
 import { disableStyle, enableStyle } from "@api/Styles";
 import ErrorBoundary from "@components/ErrorBoundary";
-import { Devs, EquicordDevs } from "@utils/constants";
+import { Devs, CoffecordDevs } from "@utils/constants";
 import definePlugin from "@utils/types";
 import { FluxDispatcher } from "@webpack/common";
 
@@ -20,7 +20,7 @@ import { getListeners } from "./utils";
 
 export default definePlugin({
     name: "SoundBoardLogger",
-    authors: [Devs.Moxxie, EquicordDevs.Fres, Devs.amy, Devs.thororen],
+    authors: [Devs.Moxxie, CoffecordDevs.Fres, Devs.amy, Devs.thororen],
     description: "Logs all soundboards that are played in a voice chat and allows you to download them",
     dependencies: ["AudioPlayerAPI", "ChatInputButtonAPI"],
     patches: [

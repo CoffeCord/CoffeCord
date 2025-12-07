@@ -12,7 +12,7 @@ import { classNameFactory } from "@api/Styles";
 import { Flex } from "@components/Flex";
 import { HeadingTertiary } from "@components/Heading";
 import { DeleteIcon } from "@components/Icons";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import { useForceUpdater } from "@utils/react";
 import definePlugin, { OptionType } from "@utils/types";
 import { Button, TextInput, useState } from "@webpack/common";
@@ -150,7 +150,7 @@ const settings = definePluginSettings({
 
 export default definePlugin({
     name: "ContentWarning",
-    authors: [EquicordDevs.camila314],
+    authors: [CoffecordDevs.camila314],
     description: "Allows you to specify certain trigger words that will be blurred by default. Hovering/Clicking on the blurred content will reveal it.",
     settings,
     patches: [

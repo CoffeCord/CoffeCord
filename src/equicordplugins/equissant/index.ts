@@ -6,7 +6,7 @@
 
 import { AudioPlayerInterface, createAudioPlayer } from "@api/AudioPlayer";
 import { definePluginSettings } from "@api/Settings";
-import { Devs, EquicordDevs } from "@utils/constants";
+import { Devs, CoffecordDevs } from "@utils/constants";
 import definePlugin, { OptionType } from "@utils/types";
 
 let clickCount = 0;
@@ -33,7 +33,7 @@ const settings = definePluginSettings({
 export default definePlugin({
     name: "Equissant",
     description: "Crossant every specified amount of clicks :trolley:",
-    authors: [EquicordDevs.SomeAspy, Devs.thororen],
+    authors: [CoffecordDevs.SomeAspy, Devs.thororen],
     dependencies: ["AudioPlayerAPI"],
     settings,
     start() {

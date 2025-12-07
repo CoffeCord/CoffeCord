@@ -9,7 +9,7 @@ import "./styles.css";
 import * as DataStore from "@api/DataStore";
 import { definePluginSettings } from "@api/Settings";
 import { classNameFactory } from "@api/Styles";
-import { EquicordDevs, IS_MAC } from "@utils/constants";
+import { CoffecordDevs, IS_MAC } from "@utils/constants";
 import { closeModal, openModal } from "@utils/modal";
 import definePlugin, { makeRange, OptionType } from "@utils/types";
 import { Button, ChannelRouter, ChannelStore, IconUtils, React, RelationshipStore, SelectedChannelStore, Toasts, UserStore } from "@webpack/common";
@@ -332,7 +332,7 @@ function showCycleToast() {
 export default definePlugin({
     name: "RecentDMSwitcher",
     description: "Ctrl+Tab between most recently used DMs (Ctrl+Shift+Tab reverse)",
-    authors: [EquicordDevs.mmeta],
+    authors: [CoffecordDevs.mmeta],
     settings,
 
     flux: {

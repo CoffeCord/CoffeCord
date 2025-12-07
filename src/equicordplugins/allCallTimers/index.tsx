@@ -6,7 +6,7 @@
 
 import { definePluginSettings } from "@api/Settings";
 import ErrorBoundary from "@components/ErrorBoundary";
-import { Devs, EquicordDevs } from "@utils/constants";
+import { Devs, CoffecordDevs } from "@utils/constants";
 import definePlugin, { OptionType } from "@utils/types";
 import { PassiveUpdateState, VoiceState } from "@vencord/discord-types";
 import { FluxDispatcher, GuildStore, UserStore } from "@webpack/common";
@@ -101,7 +101,7 @@ let runOneTime = true;
 export default definePlugin({
     name: "AllCallTimers",
     description: "Add call timer to all users in a server voice channel.",
-    authors: [EquicordDevs.MaxHerbold, Devs.D3SOX],
+    authors: [CoffecordDevs.MaxHerbold, Devs.D3SOX],
     settings,
     patches: [
         {

@@ -132,7 +132,7 @@ async function runUpdateCheck() {
             await update();
             if (Settings.autoUpdateNotification) {
                 notify({
-                    title: "Equicord has been updated!",
+                    title: "Coffecord has been updated!",
                     body: "Click here to restart",
                     onClick: relaunch
                 });

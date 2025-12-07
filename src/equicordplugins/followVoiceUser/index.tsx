@@ -9,7 +9,7 @@ import "@equicordplugins/_misc/styles.css";
 import { NavContextMenuPatchCallback } from "@api/ContextMenu";
 import { definePluginSettings } from "@api/Settings";
 import { Paragraph } from "@components/Paragraph";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import definePlugin, { OptionType } from "@utils/types";
 import { Channel, User, VoiceState } from "@vencord/discord-types";
 import { findByPropsLazy, findStoreLazy } from "@webpack";
@@ -77,7 +77,7 @@ const UserContextMenuPatch: NavContextMenuPatchCallback = (children, { channel, 
 export default definePlugin({
     name: "FollowVoiceUser",
     description: "Follow a friend in voice chat.",
-    authors: [EquicordDevs.TheArmagan],
+    authors: [CoffecordDevs.TheArmagan],
     settings,
     settingsAboutComponent: () => <>
         <Paragraph className="plugin-warning">

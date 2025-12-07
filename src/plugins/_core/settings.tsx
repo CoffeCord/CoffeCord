@@ -92,45 +92,45 @@ export default definePlugin({
         return [
             {
                 section: SectionTypes.HEADER,
-                label: "Equicord",
+                label: "Coffecord",
                 className: "vc-settings-header",
             },
             {
-                section: "EquicordSettings",
-                label: "Equicord",
+                section: "CoffecordSettings",
+                label: "Coffecord",
                 element: VencordTab,
                 className: "vc-settings",
             },
             {
-                section: "EquicordPlugins",
+                section: "CoffecordPlugins",
                 label: "Plugins",
                 searchableTitles: ["Plugins"],
                 element: PluginsTab,
                 className: "vc-plugins",
             },
             {
-                section: "EquicordThemes",
+                section: "CoffecordThemes",
                 label: "Themes",
                 searchableTitles: ["Themes"],
                 element: ThemesTab,
                 className: "vc-themes",
             },
             !IS_UPDATER_DISABLED && {
-                section: "EquicordUpdater",
+                section: "CoffecordUpdater",
                 label: "Updater",
                 searchableTitles: ["Updater"],
                 element: UpdaterTab,
                 className: "vc-updater",
             },
             {
-                section: "EquicordChangelog",
+                section: "CoffecordChangelog",
                 label: "Changelog",
                 searchableTitles: ["Changelog"],
                 element: ChangelogTab,
                 className: "vc-changelog",
             },
             {
-                section: "EquicordCloud",
+                section: "CoffecordCloud",
                 label: "Cloud",
                 searchableTitles: ["Cloud"],
                 element: CloudTab,
@@ -144,7 +144,7 @@ export default definePlugin({
                 className: "vc-backup-restore",
             },
             IS_DEV && {
-                section: "EquicordPatchHelper",
+                section: "CoffecordPatchHelper",
                 label: "Patch Helper",
                 searchableTitles: ["Patch Helper"],
                 element: PatchHelperTab,
@@ -233,7 +233,7 @@ export default definePlugin({
     options: {
         settingsLocation: {
             type: OptionType.SELECT,
-            description: "Where to put the Equicord settings section",
+            description: "Where to put the Coffecord Settings section",
             options: [
                 { label: "At the very top", value: "top" },
                 { label: "Above the Nitro section", value: "aboveNitro", default: true },

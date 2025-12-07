@@ -8,7 +8,7 @@
 import { definePluginSettings } from "@api/Settings";
 import { HeadingSecondary } from "@components/Heading";
 import { Paragraph } from "@components/Paragraph";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import { Logger } from "@utils/Logger";
 import definePlugin, { OptionType } from "@utils/types";
 import { ApplicationAssetUtils, FluxDispatcher, showToast } from "@webpack/common";
@@ -88,7 +88,7 @@ function setActivity(activity: Activity | null) {
 export default definePlugin({
     name: "AudioBookShelfRichPresence",
     description: "Rich presence for AudioBookShelf media server",
-    authors: [EquicordDevs.vmohammad],
+    authors: [CoffecordDevs.vmohammad],
 
     settingsAboutComponent: () => (
         <>

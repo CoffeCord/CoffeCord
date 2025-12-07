@@ -7,7 +7,7 @@
 import "@equicordplugins/_misc/styles.css";
 
 import { Paragraph } from "@components/Paragraph";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import definePlugin from "@utils/types";
 
 export default definePlugin({
@@ -18,7 +18,7 @@ export default definePlugin({
             You might need to spam left mouse button on the video to skip it.
         </Paragraph>
     </>,
-    authors: [EquicordDevs.secp192k1],
+    authors: [CoffecordDevs.secp192k1],
     patches: [
         // Block pausing
         {

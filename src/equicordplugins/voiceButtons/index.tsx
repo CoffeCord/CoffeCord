@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import definePlugin from "@utils/types";
 import { User } from "@vencord/discord-types";
 import { Flex, React } from "@webpack/common";
@@ -15,7 +15,7 @@ import { UserChatButton, UserDeafenButton, UserMuteButton } from "./utils";
 export default definePlugin({
     name: "VoiceButtons",
     description: "Quickly DM, mute, or deafen any user right from the voice-call panel.",
-    authors: [EquicordDevs.nicola02nb, EquicordDevs.omaw],
+    authors: [CoffecordDevs.nicola02nb, CoffecordDevs.omaw],
     settings,
     patches: [
         {

@@ -13,7 +13,7 @@ import { Flex } from "@components/Flex";
 import { FormSwitch } from "@components/FormSwitch";
 import { Heading, HeadingTertiary } from "@components/Heading";
 import { DeleteIcon } from "@components/Icons";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import { Margins } from "@utils/margins";
 import { classes } from "@utils/misc";
 import { useForceUpdater } from "@utils/react";
@@ -320,7 +320,7 @@ const settings = definePluginSettings({
 
 export default definePlugin({
     name: "KeywordNotify",
-    authors: [EquicordDevs.camila314, EquicordDevs.x3rt],
+    authors: [CoffecordDevs.camila314, CoffecordDevs.x3rt],
     description: "Sends a notification if a given message matches certain keywords or regexes",
     settings,
     patches: [

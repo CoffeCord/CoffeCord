@@ -7,7 +7,7 @@
 import { findGroupChildrenByChildId } from "@api/ContextMenu";
 import { updateMessage } from "@api/MessageUpdater";
 import { ImageInvisible, ImageVisible } from "@components/Icons";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import { Logger } from "@utils/Logger";
 import { parseUrl } from "@utils/misc";
 import definePlugin from "@utils/types";
@@ -193,7 +193,7 @@ function showFailureToast(message: string) {
 export default definePlugin({
     name: "ShowMessageEmbeds",
     description: "Adds a context menu option to show embeds for links that don't have one",
-    authors: [EquicordDevs.Suffocate],
+    authors: [CoffecordDevs.Suffocate],
 
     patches: [
         {

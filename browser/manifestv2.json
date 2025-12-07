@@ -1,10 +1,10 @@
 {
     "manifest_version": 2,
     "minimum_chrome_version": "91",
-    "name": "Equicord Web",
-    "description": "The other cutest Discord mod now in your browser",
-    "author": "Equicord",
-    "homepage_url": "https://github.com/Equicord/Equicord",
+    "name": "Coffecord Web",
+    "description": "The caffeinated Discord mod now in your browser",
+    "author": "Coffecord",
+    "homepage_url": "https://github.com/CoffeCord/CoffeCord",
     "icons": {
         "128": "icon.png"
     },
@@ -32,7 +32,7 @@
                 "*://*.discord.com/*"
             ],
             "js": [
-                "dist/Equicord.js"
+                "dist/Coffecord.js"
             ],
             "all_frames": true,
             "world": "MAIN"
@@ -44,12 +44,12 @@
         ]
     },
     "web_accessible_resources": [
-        "dist/Equicord.js",
-        "dist/Equicord.css"
+        "dist/Coffecord.js",
+        "dist/Coffecord.css"
     ],
     "browser_specific_settings": {
         "gecko": {
-            "id": "equicord-firefox@equicord.org",
+            "id": "coffecord-firefox@coffecord.org",
             "strict_min_version": "128.0"
         }
     }

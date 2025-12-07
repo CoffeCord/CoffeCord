@@ -5,7 +5,7 @@
  */
 
 import { definePluginSettings } from "@api/Settings";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import definePlugin, { OptionType } from "@utils/types";
 import { Message } from "@vencord/discord-types";
 
@@ -70,7 +70,7 @@ export function containsBlockedKeywords(message: Message) {
 export default definePlugin({
     name: "BlockKeywords",
     description: "Blocks messages containing specific user-defined keywords, as if the user sending them was blocked.",
-    authors: [EquicordDevs.catcraft],
+    authors: [CoffecordDevs.catcraft],
     patches: [
         {
             find: '"_channelMessages",{})',

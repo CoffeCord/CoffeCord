@@ -5,7 +5,7 @@
  */
 
 import { definePluginSettings } from "@api/Settings";
-import { Devs, EquicordDevs } from "@utils/constants";
+import { Devs, CoffecordDevs } from "@utils/constants";
 import definePlugin, { OptionType } from "@utils/types";
 import { findByPropsLazy } from "@webpack";
 import { MessageActions } from "@webpack/common";
@@ -28,7 +28,7 @@ const PinActions = findByPropsLazy("pinMessage", "unpinMessage");
 export default definePlugin({
     name: "ShowAllMessageButtons",
     description: "Always show all message buttons no matter if you are holding the shift key or not.",
-    authors: [Devs.Nuckyz, EquicordDevs.mochienya],
+    authors: [Devs.Nuckyz, CoffecordDevs.mochienya],
     settings,
 
     patches: [

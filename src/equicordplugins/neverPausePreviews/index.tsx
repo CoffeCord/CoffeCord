@@ -19,13 +19,13 @@
 import "@equicordplugins/_misc/styles.css";
 
 import { Paragraph } from "@components/Paragraph";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import definePlugin from "@utils/types";
 
 export default definePlugin({
     name: "NeverPausePreviews",
     description: "Prevents in-call/PiP previews (screenshare, streams, etc) from pausing even if the client loses focus",
-    authors: [EquicordDevs.vappstar],
+    authors: [CoffecordDevs.vappstar],
     settingsAboutComponent: () => <>
         <Paragraph className="plugin-warning">
             This plugin will cause discord to use more resources than normal

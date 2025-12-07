@@ -11,7 +11,7 @@ import { definePluginSettings } from "@api/Settings";
 import { classNameFactory } from "@api/Styles";
 import { Button } from "@components/Button";
 import { ErrorBoundary } from "@components/index";
-import { Devs, EquicordDevs } from "@utils/constants";
+import { Devs, CoffecordDevs } from "@utils/constants";
 import definePlugin, { OptionType } from "@utils/types";
 import { Channel } from "@vencord/discord-types";
 import { findComponentByCodeLazy } from "@webpack";
@@ -84,7 +84,7 @@ const args = {
 export default definePlugin({
     name: "IgnoreCalls",
     description: "Allows you to ignore calls from specific users or dm groups.",
-    authors: [EquicordDevs.TheArmagan, Devs.thororen],
+    authors: [CoffecordDevs.TheArmagan, Devs.thororen],
     settings,
     patches: [
         {

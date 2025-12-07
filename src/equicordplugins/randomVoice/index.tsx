@@ -8,7 +8,7 @@ import { definePluginSettings } from "@api/Settings";
 import { disableStyle, enableStyle } from "@api/Styles";
 import ErrorBoundary from "@components/ErrorBoundary";
 import { debounce } from "@shared/debounce";
-import { Devs, EquicordDevs } from "@utils/constants";
+import { Devs, CoffecordDevs } from "@utils/constants";
 import definePlugin, { makeRange, OptionType } from "@utils/types";
 import { findByCodeLazy, findByPropsLazy, findComponentByCodeLazy } from "@webpack";
 import { ChannelRouter, ChannelStore, ContextMenuApi, GuildStore, MediaEngineStore, Menu, PermissionsBits, PermissionStore, React, SelectedChannelStore, Toasts, UserStore, VoiceActions, VoiceStateStore } from "@webpack/common";
@@ -164,7 +164,7 @@ interface VoiceState {
 export default definePlugin({
     name: "RandomVoice",
     description: "Adds a Button near the Mute button to join a random voice call.",
-    authors: [EquicordDevs.xijexo, EquicordDevs.omaw, Devs.thororen],
+    authors: [CoffecordDevs.xijexo, CoffecordDevs.omaw, Devs.thororen],
     patches: [
         {
             find: "#{intl::ACCOUNT_SPEAKING_WHILE_MUTED}",

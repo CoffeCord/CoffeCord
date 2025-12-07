@@ -6,7 +6,7 @@
 
 import { Settings } from "@api/Settings";
 import { disableStyle, enableStyle } from "@api/Styles";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import definePlugin from "@utils/types";
 import { IconUtils, UserStore } from "@webpack/common";
 
@@ -20,7 +20,7 @@ interface iUSRBG extends Plugin {
 export default definePlugin({
     name: "FullVCPFP",
     description: "Makes avatars take up the entire vc tile",
-    authors: [EquicordDevs.mochienya],
+    authors: [CoffecordDevs.mochienya],
     patches: [
         {
             find: "\"data-selenium-video-tile\":",

@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-import { Devs, EquicordDevs } from "@utils/constants";
+import { Devs, CoffecordDevs } from "@utils/constants";
 import { isAnyPluginDev } from "@utils/misc";
 import definePlugin from "@utils/types";
 import { UserStore } from "@webpack/common";
@@ -12,7 +12,7 @@ import { UserStore } from "@webpack/common";
 export default definePlugin({
     name: "VCSupport",
     description: "Wumpus Dance + Support Warnings",
-    authors: [Devs.thororen, EquicordDevs.coolesding],
+    authors: [Devs.thororen, CoffecordDevs.coolesding],
     required: true,
     start() {
         const selfId = UserStore.getCurrentUser()?.id;

@@ -5,7 +5,7 @@
  */
 
 import { definePluginSettings } from "@api/Settings";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import definePlugin, { OptionType } from "@utils/types";
 import { findByPropsLazy } from "@webpack";
 import { FluxDispatcher } from "@webpack/common";
@@ -59,7 +59,7 @@ function handleKeydown({ code, ctrlKey, shiftKey, altKey }: KeyboardEvent) {
 export default definePlugin({
     name: "ToggleVideoBind",
     description: "Adds a customizable bind to toggle webcam.",
-    authors: [EquicordDevs.mochienya],
+    authors: [CoffecordDevs.mochienya],
     settings,
     start() {
         document.addEventListener("keydown", handleKeydown);

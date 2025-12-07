@@ -17,7 +17,7 @@
 */
 
 import { definePluginSettings } from "@api/Settings";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import definePlugin, { makeRange, OptionType } from "@utils/types";
 
 
@@ -54,7 +54,7 @@ let containerEl;
 export default definePlugin({
     name: "LimitMiddleClickPaste",
     description: "For middle-click autoscroll users, prevents middle-click from making unwanted pastes.",
-    authors: [EquicordDevs.nobody],
+    authors: [CoffecordDevs.nobody],
 
     settings: settings,
 

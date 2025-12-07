@@ -1266,7 +1266,7 @@ const BUILT_IN_CATEGORIES: CommandCategory[] = [
 const BUILT_IN_COMMANDS: CommandEntry[] = [
     {
         id: "open-equicord-settings",
-        label: "Open Equicord Settings",
+        label: "Open Coffecord Settings",
         keywords: ["settings", "equicord"],
         categoryId: DEFAULT_CATEGORY_ID,
         tags: [TAG_NAVIGATION, TAG_CORE],

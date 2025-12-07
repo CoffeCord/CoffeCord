@@ -8,7 +8,7 @@
 import { definePluginSettings } from "@api/Settings";
 import { HeadingSecondary } from "@components/Heading";
 import { Paragraph } from "@components/Paragraph";
-import { Devs, EquicordDevs } from "@utils/constants";
+import { Devs, CoffecordDevs } from "@utils/constants";
 import { Logger } from "@utils/Logger";
 import definePlugin, { OptionType } from "@utils/types";
 import { ApplicationAssetUtils, FluxDispatcher, showToast } from "@webpack/common";
@@ -170,7 +170,7 @@ function setActivity(activity: Activity | null) {
 export default definePlugin({
     name: "JellyfinRichPresence",
     description: "Rich presence for Jellyfin media server",
-    authors: [EquicordDevs.vmohammad, Devs.SerStars, EquicordDevs.ZcraftElite],
+    authors: [CoffecordDevs.vmohammad, Devs.SerStars, CoffecordDevs.ZcraftElite],
 
     settingsAboutComponent: () => (
         <>

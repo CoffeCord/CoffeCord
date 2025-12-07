@@ -5,7 +5,7 @@
  */
 
 import { playAudio } from "@api/AudioPlayer";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import { getCurrentChannel } from "@utils/discord";
 import definePlugin from "@utils/types";
 
@@ -23,7 +23,7 @@ async function readOutText(text: string): Promise<void> {
 export default definePlugin({
     name: "TiktokTTS",
     description: "Reads out chat messages with the good ol' Tiktok TTS voice :sob:",
-    authors: [EquicordDevs.VillainsRule],
+    authors: [CoffecordDevs.VillainsRule],
     dependencies: ["AudioPlayerAPI"],
     flux: {
         async MESSAGE_CREATE({ optimistic, type, message }) {

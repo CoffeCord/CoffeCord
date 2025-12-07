@@ -5,7 +5,7 @@
  */
 
 import { definePluginSettings } from "@api/Settings";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import definePlugin, { OptionType } from "@utils/types";
 
 enum SteamStatus {
@@ -85,7 +85,7 @@ export const settings = definePluginSettings({
 export default definePlugin({
     name: "SteamStatusSync",
     description: "Sync your status to Steam!",
-    authors: [EquicordDevs.niko],
+    authors: [CoffecordDevs.niko],
 
     settings,
 

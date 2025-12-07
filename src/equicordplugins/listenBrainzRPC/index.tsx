@@ -8,7 +8,7 @@ import { definePluginSettings } from "@api/Settings";
 import { HeadingSecondary } from "@components/Heading";
 import { Link } from "@components/Link";
 import { Paragraph } from "@components/Paragraph";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import { Logger } from "@utils/Logger";
 import definePlugin, { OptionType } from "@utils/types";
 import { Activity, ActivityAssets, ActivityButton } from "@vencord/discord-types";
@@ -161,7 +161,7 @@ var currentStart = 0;
 export default definePlugin({
     name: "ListenBrainzRPC",
     description: "Little plugin for ListenBrainz rich presence",
-    authors: [EquicordDevs.qouesm],
+    authors: [CoffecordDevs.qouesm],
 
     settingsAboutComponent: () => (
         <>

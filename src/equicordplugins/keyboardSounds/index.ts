@@ -6,7 +6,7 @@
 
 import { AudioPlayerInterface, createAudioPlayer } from "@api/AudioPlayer";
 import { definePluginSettings } from "@api/Settings";
-import { Devs, EquicordDevs } from "@utils/constants";
+import { Devs, CoffecordDevs } from "@utils/constants";
 import definePlugin, { OptionType } from "@utils/types";
 
 import { ignoredKeys, packs } from "./packs";
@@ -126,7 +126,7 @@ const settings = definePluginSettings({
 export default definePlugin({
     name: "KeyboardSounds",
     description: "Adds OperaGX or osu! sound effects when typing on your keyboard.",
-    authors: [Devs.HypedDomi, EquicordDevs.Etorix],
+    authors: [Devs.HypedDomi, CoffecordDevs.Etorix],
     dependencies: ["AudioPlayerAPI"],
     settings,
     start() {

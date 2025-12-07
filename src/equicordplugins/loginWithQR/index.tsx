@@ -6,7 +6,7 @@
 
 import { definePluginSettings } from "@api/Settings";
 import { Paragraph } from "@components/Paragraph";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import { getIntlMessage } from "@utils/discord";
 import definePlugin, { OptionType } from "@utils/types";
 import { Button, Menu } from "@webpack/common";
@@ -19,7 +19,7 @@ import openQrModal from "./ui/modals/QrModal";
 export default definePlugin({
     name: "LoginWithQR",
     description: "Allows you to login to another device by scanning a login QR code, just like on mobile!",
-    authors: [EquicordDevs.nexpid],
+    authors: [CoffecordDevs.nexpid],
 
     settings: definePluginSettings({
         scanQr: {

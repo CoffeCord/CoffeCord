@@ -6,7 +6,7 @@
 
 import "./styles.css";
 
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import { getIntlMessage, openUserProfile } from "@utils/discord";
 import definePlugin from "@utils/types";
 import { Button, React, RelationshipStore, TextInput, UserStore } from "@webpack/common";
@@ -17,7 +17,7 @@ let updateFunc = (v: any) => { };
 export default definePlugin({
     name: "BetterBlockedUsers",
     description: "Allows you to search in blocked users list and makes names selectable in settings.",
-    authors: [EquicordDevs.TheArmagan],
+    authors: [CoffecordDevs.TheArmagan],
     patches: [
         {
             find: '"],{numberOfBlockedUsers:',

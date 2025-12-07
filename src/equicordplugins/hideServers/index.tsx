@@ -15,7 +15,7 @@ import {
     removeServerListElement,
     ServerListRenderPosition,
 } from "@api/ServerList";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import definePlugin from "@utils/types";
 import { Guild } from "@vencord/discord-types";
 import { findStoreLazy } from "@webpack";
@@ -76,7 +76,7 @@ export function removeIndicator() {
 export default definePlugin({
     name: "HideServers",
     description: "Allows you to hide servers from the guild list and quick switcher by right clicking them",
-    authors: [EquicordDevs.bep],
+    authors: [CoffecordDevs.bep],
     tags: ["guild", "server", "hide", "folder"],
 
     dependencies: ["ServerListAPI"],

@@ -18,7 +18,7 @@
 
 import { ChatBarButton, ChatBarButtonFactory } from "@api/ChatButtons";
 import { addMessagePreSendListener, MessageSendListener, removeMessagePreSendListener } from "@api/MessageEvents";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import definePlugin from "@utils/types";
 import { React, useEffect, useState } from "@webpack/common";
 
@@ -56,7 +56,7 @@ const ReverseMessageToggle: ChatBarButtonFactory = ({ isMainChat }) => {
 
 export default definePlugin({
     name: "TalkInReverse",
-    authors: [EquicordDevs.Tolgchu],
+    authors: [CoffecordDevs.Tolgchu],
     description: "Reverses the message content before sending it.",
     dependencies: ["MessageEventsAPI", "ChatInputButtonAPI"],
     renderChatBarButton: ReverseMessageToggle,

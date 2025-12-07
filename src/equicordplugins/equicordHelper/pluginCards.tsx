@@ -10,7 +10,7 @@ import { WarningIcon } from "@components/Icons";
 import { AddonCard } from "@components/settings";
 import { ExcludedReasons, PluginDependencyList } from "@components/settings/tabs/plugins";
 import { PluginCard } from "@components/settings/tabs/plugins/PluginCard";
-import { EQUIBOT_USER_ID } from "@utils/constants";
+import { COFFEBOT_USER_ID } from "@utils/constants";
 import { isEquicordGuild, isEquicordSupport } from "@utils/misc";
 import { Message } from "@vencord/discord-types";
 import { showToast, Tooltip, TooltipContainer } from "@webpack/common";
@@ -124,7 +124,7 @@ export const PluginCards = ErrorBoundary.wrap(function PluginCards({ message }: 
 
     // Process components
     const components = (message.components?.[0] as any)?.components;
-    if (message.author.id === EQUIBOT_USER_ID && components?.length >= 4) {
+    if (message.author.id === COFFEBOT_USER_ID && components?.length >= 4) {
         const description = components[1]?.content;
         const pluginUrl = components.find((c: any) => c?.components)?.components[0]?.url;
         if (pluginUrl?.startsWith("https://equicord.org/plugins/") || pluginUrl?.startsWith("https://vencord.dev/plugins/")) {

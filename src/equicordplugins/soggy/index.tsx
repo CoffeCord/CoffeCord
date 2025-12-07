@@ -7,7 +7,7 @@
 import { AudioPlayerInterface, createAudioPlayer } from "@api/AudioPlayer";
 import { definePluginSettings } from "@api/Settings";
 import ErrorBoundary from "@components/ErrorBoundary";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import { ModalProps, ModalRoot, openModal } from "@utils/modal";
 import definePlugin, { OptionType } from "@utils/types";
 import { findComponentByCodeLazy } from "@webpack";
@@ -140,7 +140,7 @@ const settings = definePluginSettings({
 export default definePlugin({
     name: "Soggy",
     description: "Adds a soggy button to the toolbox",
-    authors: [EquicordDevs.sliwka],
+    authors: [CoffecordDevs.sliwka],
     settings,
     dependencies: ["AudioPlayerAPI"],
     patches: [

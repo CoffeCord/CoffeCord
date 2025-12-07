@@ -10,7 +10,7 @@ import { definePluginSettings, migratePluginSetting } from "@api/Settings";
 import { HeadingSecondary, HeadingTertiary } from "@components/Heading";
 import { Paragraph } from "@components/Paragraph";
 import { debounce } from "@shared/debounce";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import { Margins } from "@utils/margins";
 import { classes } from "@utils/misc";
 import definePlugin, { OptionType } from "@utils/types";
@@ -199,7 +199,7 @@ const settings = definePluginSettings({
 export default definePlugin({
     name: "FontLoader",
     description: "Loads any font from Google Fonts",
-    authors: [EquicordDevs.vmohammad],
+    authors: [CoffecordDevs.vmohammad],
     settings,
 
     async start() {

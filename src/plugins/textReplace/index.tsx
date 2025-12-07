@@ -21,7 +21,7 @@ import { Divider } from "@components/Divider";
 import { Flex } from "@components/Flex";
 import { HeadingTertiary } from "@components/Heading";
 import { DeleteIcon } from "@components/Icons";
-import { Devs, EquicordDevs } from "@utils/constants";
+import { Devs, CoffecordDevs } from "@utils/constants";
 import { Logger } from "@utils/Logger";
 import definePlugin, { OptionType } from "@utils/types";
 import { Message } from "@vencord/discord-types";
@@ -256,7 +256,7 @@ const TEXT_REPLACE_RULES_EXEMPT_CHANNEL_IDS = [
 export default definePlugin({
     name: "TextReplace",
     description: "Replace text in your or others' messages. You can find pre-made rules in the #textreplace-rules channel in Vencord's Server.",
-    authors: [Devs.AutumnVN, Devs.TheKodeToad, EquicordDevs.Etorix],
+    authors: [Devs.AutumnVN, Devs.TheKodeToad, CoffecordDevs.Etorix],
     isModified: true,
 
     settings,

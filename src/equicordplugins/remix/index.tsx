@@ -7,7 +7,7 @@
 import { findGroupChildrenByChildId, NavContextMenuPatchCallback } from "@api/ContextMenu";
 import { disableStyle, enableStyle } from "@api/Styles";
 import { PaintbrushIcon } from "@components/Icons";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import { closeModal, openModal } from "@utils/modal";
 import definePlugin from "@utils/types";
 import { extractAndLoadChunksLazy, findLazy, findStoreLazy } from "@webpack";
@@ -73,7 +73,7 @@ export function sendRemix(blob: Blob) {
 export default definePlugin({
     name: "RemixRevived",
     description: "Revives Remix and breings it to Desktop",
-    authors: [EquicordDevs.MrDiamond, EquicordDevs.meowabyte],
+    authors: [CoffecordDevs.MrDiamond, CoffecordDevs.meowabyte],
     contextMenus: {
         "channel-attach": UploadContextMenuPatch,
         "message": MessageContextMenuPatch,

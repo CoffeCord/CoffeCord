@@ -14,7 +14,7 @@ import { Flex } from "@components/Flex";
 import { Heading } from "@components/Heading";
 import { Paragraph } from "@components/Paragraph";
 import { copyToClipboard } from "@utils/clipboard";
-import { Devs, EquicordDevs } from "@utils/constants";
+import { Devs, CoffecordDevs } from "@utils/constants";
 import { ModalContent, ModalFooter, ModalHeader, ModalRoot, ModalSize, openModal } from "@utils/modal";
 import definePlugin, { OptionType } from "@utils/types";
 import { Alerts, Button, ContextMenuApi, FluxDispatcher, Menu, React, showToast, TextInput, Toasts, useCallback, useState } from "@webpack/common";
@@ -306,7 +306,7 @@ export const settings = definePluginSettings({
 export default definePlugin({
     name: "GifCollections",
     description: "Allows you to create collections of gifs",
-    authors: [Devs.Aria, EquicordDevs.creations],
+    authors: [Devs.Aria, CoffecordDevs.creations],
     patches: [
         {
             find: "renderCategoryExtras",

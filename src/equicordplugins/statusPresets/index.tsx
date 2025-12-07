@@ -21,7 +21,7 @@ import "./style.css";
 import { definePluginSettings } from "@api/Settings";
 import { getUserSettingLazy } from "@api/UserSettings";
 import ErrorBoundary from "@components/ErrorBoundary";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import { proxyLazy } from "@utils/lazy";
 import { classes } from "@utils/misc";
 import { openModalLazy } from "@utils/modal";
@@ -147,7 +147,7 @@ const StatusSubMenuComponent = () => {
 export default definePlugin({
     name: "StatusPresets",
     description: "Allows you to remember your statuses and set them later",
-    authors: [EquicordDevs.iamme],
+    authors: [CoffecordDevs.iamme],
     settings: settings,
     dependencies: ["UserSettingsAPI"],
     managedStyle,

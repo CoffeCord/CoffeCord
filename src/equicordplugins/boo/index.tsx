@@ -10,7 +10,7 @@ import { addServerListElement, removeServerListElement, ServerListRenderPosition
 import { definePluginSettings, migratePluginSettings } from "@api/Settings";
 import { classNameFactory } from "@api/Styles";
 import ErrorBoundary from "@components/ErrorBoundary";
-import { Devs, EquicordDevs } from "@utils/constants";
+import { Devs, CoffecordDevs } from "@utils/constants";
 import { closeModal, openModal } from "@utils/modal";
 import definePlugin, { OptionType } from "@utils/types";
 import { Channel } from "@vencord/discord-types";
@@ -193,7 +193,7 @@ migratePluginSettings("Ghosted", "Boo");
 export default definePlugin({
     name: "Ghosted",
     description: "A cute ghost will appear if you don't answer their DMs",
-    authors: [EquicordDevs.vei, Devs.sadan, EquicordDevs.justjxke],
+    authors: [CoffecordDevs.vei, Devs.sadan, CoffecordDevs.justjxke],
     settings,
     dependencies: ["AudioPlayerAPI"],
 

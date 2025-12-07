@@ -7,7 +7,7 @@
 import { findGroupChildrenByChildId, NavContextMenuPatchCallback } from "@api/ContextMenu";
 import { definePluginSettings } from "@api/Settings";
 import { classNameFactory } from "@api/Styles";
-import { Devs, EquicordDevs } from "@utils/constants";
+import { Devs, CoffecordDevs } from "@utils/constants";
 import definePlugin, { OptionType } from "@utils/types";
 import { Message, User } from "@vencord/discord-types";
 import { findByCodeLazy } from "@webpack";
@@ -108,7 +108,7 @@ let clientOldChannelId: string | undefined;
 export default definePlugin({
     name: "VoiceChannelLog",
     description: "Logs who joins and leaves voice channels",
-    authors: [Devs.Sqaaakoi, Devs.thororen, EquicordDevs.nyx],
+    authors: [Devs.Sqaaakoi, Devs.thororen, CoffecordDevs.nyx],
     contextMenus: {
         "channel-context": patchChannelContextMenu
     },

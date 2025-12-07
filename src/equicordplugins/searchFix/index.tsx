@@ -16,7 +16,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import definePlugin from "@utils/types";
 
 function settingsComponent() {
@@ -40,7 +40,7 @@ export default definePlugin({
     name: "SearchFix",
     description: 'Fixes the annoying "We dropped the magnifying glass!" error.',
     settingsAboutComponent: () => settingsComponent(),
-    authors: [EquicordDevs.Jaxx],
+    authors: [CoffecordDevs.Jaxx],
     patches: [
         {
             find: '"SearchQueryStore");',

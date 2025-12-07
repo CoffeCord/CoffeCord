@@ -6,7 +6,7 @@
 
 import { definePluginSettings } from "@api/Settings";
 import { classNameFactory } from "@api/Styles";
-import { EquicordDevs, IS_MAC } from "@utils/constants";
+import { CoffecordDevs, IS_MAC } from "@utils/constants";
 import definePlugin, { OptionType } from "@utils/types";
 import { Button, Text, useEffect, useRef, useState } from "@webpack/common";
 
@@ -224,7 +224,7 @@ function hotkeyUsesModifiers() {
 export default definePlugin({
     name: "CommandPalette",
     description: "Quickly run actions through a searchable command palette",
-    authors: [EquicordDevs.justjxke],
+    authors: [CoffecordDevs.justjxke],
     settings,
     patches: [
         {

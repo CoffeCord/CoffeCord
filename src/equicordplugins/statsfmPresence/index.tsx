@@ -8,7 +8,7 @@ import { definePluginSettings } from "@api/Settings";
 import { getUserSettingLazy } from "@api/UserSettings";
 import { HeadingSecondary } from "@components/Heading";
 import { Paragraph } from "@components/Paragraph";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import { Logger } from "@utils/Logger";
 import definePlugin, { OptionType } from "@utils/types";
 import { ActivityFlags, ActivityType } from "@vencord/discord-types/enums";
@@ -222,7 +222,7 @@ const settings = definePluginSettings({
 export default definePlugin({
     name: "StatsfmPresence",
     description: "Statsfm presence to track your music",
-    authors: [EquicordDevs.Crxa],
+    authors: [CoffecordDevs.Crxa],
 
     settingsAboutComponent: () => (
         <>

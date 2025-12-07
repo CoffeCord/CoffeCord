@@ -22,7 +22,7 @@ import { CodeBlock } from "@components/CodeBlock";
 import ErrorBoundary from "@components/ErrorBoundary";
 import { Flex } from "@components/Flex";
 import { Heading } from "@components/Heading";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import { copyWithToast } from "@utils/misc";
 import { closeModal, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalRoot, ModalSize, openModal } from "@utils/modal";
 import definePlugin, { OptionType } from "@utils/types";
@@ -109,7 +109,7 @@ const settings = definePluginSettings({
 export default definePlugin({
     name: "DecodeBase64",
     description: "Decode base64 content of any message and copy the decoded content.",
-    authors: [EquicordDevs.ThePirateStoner],
+    authors: [CoffecordDevs.ThePirateStoner],
     dependencies: ["MessagePopoverAPI"],
     settings,
     renderMessagePopoverButton(msg) {

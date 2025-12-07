@@ -6,7 +6,7 @@
 
 import { popNotice, showNotice } from "@api/Notices";
 import { definePluginSettings } from "@api/Settings";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import { Logger } from "@utils/Logger";
 import { isAnyPluginDev, isEquicordGuild } from "@utils/misc";
 import definePlugin, { OptionType, ReporterTestable } from "@utils/types";
@@ -48,7 +48,7 @@ export const settings = definePluginSettings({
 export default definePlugin({
     name: "arRPCBun",
     description: "arRPCBun integration",
-    authors: [EquicordDevs.creations],
+    authors: [CoffecordDevs.creations],
     reporterTestable: ReporterTestable.None,
     enabledByDefault: IS_EQUIBOP,
     settings,

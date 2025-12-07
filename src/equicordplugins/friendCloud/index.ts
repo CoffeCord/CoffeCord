@@ -17,7 +17,7 @@
 */
 
 import { ApplicationCommandInputType, ApplicationCommandOptionType, findOption, sendBotMessage } from "@api/Commands";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import { Logger } from "@utils/Logger";
 import definePlugin from "@utils/types";
 import { User } from "@vencord/discord-types";
@@ -52,7 +52,7 @@ interface UserPosition {
 export default definePlugin({
     name: "FriendCloud",
     description: "Adds a /friendcloud command to visualize the users you most interact with",
-    authors: [EquicordDevs.Fafa],
+    authors: [CoffecordDevs.Fafa],
     commands: [
         {
             inputType: ApplicationCommandInputType.BUILT_IN,

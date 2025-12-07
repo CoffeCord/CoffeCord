@@ -6,7 +6,7 @@
 
 import { definePluginSettings } from "@api/Settings";
 import { Link } from "@components/Link";
-import { Devs, EquicordDevs } from "@utils/constants";
+import { Devs, CoffecordDevs } from "@utils/constants";
 import definePlugin, { OptionType } from "@utils/types";
 import { User } from "@vencord/discord-types";
 
@@ -27,7 +27,7 @@ export default definePlugin({
     data,
     name: "UserPFP",
     description: "Allows you to use an animated avatar without Nitro",
-    authors: [EquicordDevs.nexpid, Devs.thororen],
+    authors: [CoffecordDevs.nexpid, Devs.thororen],
     settings,
     settingsAboutComponent: () => (
         <>

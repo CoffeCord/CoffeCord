@@ -7,7 +7,7 @@
 import "@equicordplugins/_misc/styles.css";
 
 import { definePluginSettings } from "@api/Settings";
-import { Devs, EquicordDevs } from "@utils/constants";
+import { Devs, CoffecordDevs } from "@utils/constants";
 import definePlugin, { OptionType } from "@utils/types";
 
 import { PluginButtons } from "./pluginButtons";
@@ -41,7 +41,7 @@ const settings = definePluginSettings({
 export default definePlugin({
     name: "EquicordHelper",
     description: "Used to provide support, fix discord caused crashes, and other misc features.",
-    authors: [Devs.thororen, EquicordDevs.nyx, EquicordDevs.Naibuu],
+    authors: [Devs.thororen, CoffecordDevs.nyx, CoffecordDevs.Naibuu],
     required: true,
     settings,
     patches: [

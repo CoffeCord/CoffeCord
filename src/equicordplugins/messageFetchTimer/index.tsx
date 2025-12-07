@@ -6,7 +6,7 @@
 
 import { ChatBarButton, ChatBarButtonFactory } from "@api/ChatButtons";
 import { definePluginSettings } from "@api/Settings";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import { getCurrentChannel } from "@utils/discord";
 import definePlugin, { OptionType } from "@utils/types";
 import { FluxDispatcher, React } from "@webpack/common";
@@ -142,7 +142,7 @@ function handleMessageLoad(data: any) {
 export default definePlugin({
     name: "MessageFetchTimer",
     description: "Shows how long it took to fetch messages for the current channel",
-    authors: [EquicordDevs.GroupXyz],
+    authors: [CoffecordDevs.GroupXyz],
     settings,
 
     start() {

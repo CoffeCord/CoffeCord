@@ -5,7 +5,7 @@
  */
 
 import { definePluginSettings } from "@api/Settings";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import definePlugin, { OptionType } from "@utils/types";
 import { React } from "@webpack/common";
 import { type ReactNode } from "react";
@@ -166,7 +166,7 @@ function patchChildrenTree(children: any): any {
 export default definePlugin({
     name: "ToneIndicators",
     description: "Show tooltips for tone indicators like /srs, /gen, etc. in sent messages.",
-    authors: [EquicordDevs.justjxke],
+    authors: [CoffecordDevs.justjxke],
     settings,
 
     patches: [

@@ -53,7 +53,7 @@ export const gitHash = process.env.EQUICORD_HASH || execSync("git rev-parse HEAD
 
 export const banner = {
     js: `
-// Equicord ${gitHash}
+// Coffecord ${gitHash}
 // Standalone: ${IS_STANDALONE}
 // Platform: ${IS_STANDALONE === false ? process.platform : "Universal"}
 // Updater Disabled: ${IS_UPDATER_DISABLED}

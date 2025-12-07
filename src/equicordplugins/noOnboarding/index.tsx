@@ -4,14 +4,14 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-import { Devs, EquicordDevs } from "@utils/constants";
+import { Devs, CoffecordDevs } from "@utils/constants";
 import definePlugin from "@utils/types";
 import { RestAPI } from "@webpack/common";
 
 export default definePlugin({
     name: "NoOnboarding",
     description: "Bypasses Discord's onboarding process for quicker server entry.",
-    authors: [EquicordDevs.omaw, Devs.Glitch],
+    authors: [CoffecordDevs.omaw, Devs.Glitch],
     patches: [
         {
             find: ",acceptInvite(",

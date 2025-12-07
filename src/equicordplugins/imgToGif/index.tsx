@@ -17,7 +17,7 @@
 */
 
 import { ApplicationCommandInputType, ApplicationCommandOptionType, sendBotMessage } from "@api/Commands";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import definePlugin from "@utils/types";
 import { CommandArgument, CommandContext } from "@vencord/discord-types";
 import { findByPropsLazy } from "@webpack";
@@ -78,7 +78,7 @@ async function resolveImage(options: CommandArgument[], ctx: CommandContext): Pr
 export default definePlugin({
     name: "ImgToGif",
     description: "Adds a /imgtogif slash command to create a gif from any image",
-    authors: [EquicordDevs.zyqunix],
+    authors: [CoffecordDevs.zyqunix],
     commands: [
         {
             inputType: ApplicationCommandInputType.BUILT_IN,

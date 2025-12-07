@@ -6,7 +6,7 @@
 
 import { definePluginSettings } from "@api/Settings";
 import { getUserSettingLazy } from "@api/UserSettings";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import definePlugin, { OptionType } from "@utils/types";
 import { VoiceState } from "@vencord/discord-types";
 import { UserStore, VoiceStateStore } from "@webpack/common";
@@ -56,7 +56,7 @@ function setStatus(preq, status) {
 export default definePlugin({
     name: "StatusWhileActive",
     description: "Automatically updates your online status when in a voice channel.",
-    authors: [EquicordDevs.smuki],
+    authors: [CoffecordDevs.smuki],
     settings,
     flux: {
         VOICE_STATE_UPDATES({ voiceStates }: { voiceStates: VoiceState[]; }) {

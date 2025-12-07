@@ -10,7 +10,7 @@ import { definePluginSettings } from "@api/Settings";
 import { classNameFactory } from "@api/Styles";
 import { BaseText } from "@components/BaseText";
 import ErrorBoundary from "@components/ErrorBoundary";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import definePlugin, { OptionType } from "@utils/types";
 import { User } from "@vencord/discord-types";
 import { findByCodeLazy } from "@webpack";
@@ -62,7 +62,7 @@ const ProfilePopoutComponent = ErrorBoundary.wrap(
 export default definePlugin({
     name: "GitHubRepos",
     description: "Displays a user's public GitHub repositories in their profile",
-    authors: [EquicordDevs.talhakf, EquicordDevs.Panniku],
+    authors: [CoffecordDevs.talhakf, CoffecordDevs.Panniku],
     settings,
 
     patches: [

@@ -10,7 +10,7 @@ import { showNotification } from "@api/Notifications";
 import { definePluginSettings, migratePluginToSetting } from "@api/Settings";
 import ErrorBoundary from "@components/ErrorBoundary";
 import { copyToClipboard } from "@utils/clipboard";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import { showItemInFolder } from "@utils/native";
 import definePlugin, { OptionType } from "@utils/types";
 import { saveFile } from "@utils/web";
@@ -130,7 +130,7 @@ function getUsernames(contacts: ContactsList[], type: number): string[] {
 export default definePlugin({
     name: "ExportMessages",
     description: "Allows you to export any message to a file",
-    authors: [EquicordDevs.veygax, EquicordDevs.dat_insanity],
+    authors: [CoffecordDevs.veygax, CoffecordDevs.dat_insanity],
     settings,
     contextMenus: {
         "message": messageContextMenuPatch

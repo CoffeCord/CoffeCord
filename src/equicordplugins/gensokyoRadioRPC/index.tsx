@@ -6,7 +6,7 @@
 
 import { definePluginSettings } from "@api/Settings";
 import { Paragraph } from "@components/Paragraph";
-import { Devs, EquicordDevs } from "@utils/constants";
+import { Devs, CoffecordDevs } from "@utils/constants";
 import definePlugin, { OptionType, PluginNative, ReporterTestable } from "@utils/types";
 import { Activity } from "@vencord/discord-types";
 import { ActivityFlags, ActivityType } from "@vencord/discord-types/enums";
@@ -42,7 +42,7 @@ const settings = definePluginSettings({
 export default definePlugin({
     name: "GensokyoRadioRPC",
     description: "Discord rich presence for Gensokyo Radio!",
-    authors: [Devs.RyanCaoDev, EquicordDevs.Prince527],
+    authors: [Devs.RyanCaoDev, CoffecordDevs.Prince527],
     reporterTestable: ReporterTestable.None,
 
     settingsAboutComponent() {

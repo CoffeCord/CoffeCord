@@ -7,7 +7,7 @@
 import "./style.css";
 
 import { definePluginSettings, Settings } from "@api/Settings";
-import { Devs, EquicordDevs } from "@utils/constants";
+import { Devs, CoffecordDevs } from "@utils/constants";
 import definePlugin, { OptionType } from "@utils/types";
 import { GuildMember, Message, User } from "@vencord/discord-types";
 import { findByCodeLazy, findStoreLazy } from "@webpack";
@@ -805,7 +805,7 @@ const settings = definePluginSettings({
 export default definePlugin({
     name: "ShowMeYourName",
     description: "Display any permutation of nicknames, display names, and usernames in chat.",
-    authors: [Devs.Rini, Devs.TheKodeToad, EquicordDevs.Etorix, Devs.sadan],
+    authors: [Devs.Rini, Devs.TheKodeToad, CoffecordDevs.Etorix, Devs.sadan],
     isModified: true,
     settings,
 

@@ -6,7 +6,7 @@
 
 import { ApplicationCommandOptionType, findOption } from "@api/Commands";
 import { definePluginSettings } from "@api/Settings";
-import { Devs, EquicordDevs } from "@utils/constants";
+import { Devs, CoffecordDevs } from "@utils/constants";
 import definePlugin, { OptionType } from "@utils/types";
 
 function getMessage(opts) {
@@ -64,7 +64,7 @@ const settings = definePluginSettings({
 export default definePlugin({
     name: "GoogleThat",
     description: "Adds a command to send a internet search link",
-    authors: [Devs.Samwich, EquicordDevs.KrystalSkull],
+    authors: [Devs.Samwich, CoffecordDevs.KrystalSkull],
     tags: ["search", "google", "query", "duckduckgo", "command"],
     settings,
     commands: [

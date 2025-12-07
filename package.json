@@ -3,13 +3,13 @@
     "private": "true",
     "version": "1.13.6",
     "description": "The other cutest Discord client mod",
-    "homepage": "https://github.com/Equicord/Equicord#readme",
+    "homepage": "https://github.com/CoffeCord/CoffeCord#readme",
     "bugs": {
-        "url": "https://github.com/Equicord/Equicord/issues"
+        "url": "https://github.com/CoffeCord/CoffeCord/issues"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Equicord/Equicord.git"
+        "url": "git+https://github.com/CoffeCord/CoffeCord.git"
     },
     "license": "GPL-3.0-or-later",
     "author": "Equicord",
@@ -25,7 +25,7 @@
         "watchWeb": "pnpm buildWeb --watch",
         "generateDevsList": "tsx scripts/generateDevsList.ts",
         "generatePluginJson": "tsx scripts/generatePluginList.ts",
-        "generateEquicordPluginJson": "tsx scripts/generateEquicordPluginList.ts",
+        "generateEquicordPluginJson": "tsx scripts/generateCoffecordPluginList.ts",
         "generateVencordPluginJson": "tsx scripts/generateVencordPluginList.ts",
         "generateTypes": "tspc --emitDeclarationOnly --declaration --outDir packages/vencord-types --allowJs false",
         "inject": "node scripts/runInstaller.mjs -- --install",

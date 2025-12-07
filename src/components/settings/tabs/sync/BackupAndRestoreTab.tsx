@@ -34,7 +34,7 @@ function BackupAndRestoreTab() {
                 </Flex>
             </Card>
             <BaseText size="md" className={Margins.bottom8}>
-                You can import and export your Equicord settings as a JSON file.
+                You can import and export your Coffecord Settings as a JSON file.
                 This allows you to easily transfer your settings to another device,
                 or recover your settings after reinstalling Equicord or Discord.
             </BaseText>

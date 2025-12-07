@@ -6,7 +6,7 @@
 
 import { definePluginSettings } from "@api/Settings";
 import { BaseText } from "@components/BaseText";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import definePlugin, { makeRange, OptionType } from "@utils/types";
 import { ReactNode } from "react";
 
@@ -112,7 +112,7 @@ const updateStyles = () => {
 export default definePlugin({
     name: "WigglyText",
     description: "Adds a new markdown formatting that makes text wiggly.",
-    authors: [EquicordDevs.nexpid],
+    authors: [CoffecordDevs.nexpid],
     settings,
     settingsAboutComponent: () => (
         <BaseText>

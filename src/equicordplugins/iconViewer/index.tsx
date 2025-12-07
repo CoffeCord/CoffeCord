@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import definePlugin, { StartAt } from "@utils/types";
 import { SettingsRouter } from "@webpack/common";
 
@@ -15,7 +15,7 @@ import { SettingsAbout } from "./subComponents";
 export default definePlugin({
     name: "IconViewer",
     description: "Adds a new tab to settings, to preview all icons",
-    authors: [EquicordDevs.iamme],
+    authors: [CoffecordDevs.iamme],
     dependencies: ["Settings"],
     startAt: StartAt.WebpackReady,
     toolboxActions: {

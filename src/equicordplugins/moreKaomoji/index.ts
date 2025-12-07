@@ -17,13 +17,13 @@
 */
 
 import { findOption, OptionalMessageOption } from "@api/Commands";
-import { Devs, EquicordDevs } from "@utils/constants";
+import { Devs, CoffecordDevs } from "@utils/constants";
 import definePlugin from "@utils/types";
 
 export default definePlugin({
     name: "MoreKaomoji",
     description: "Adds more Kaomoji to discord. ヽ(´▽`)/",
-    authors: [Devs.JacobTm, EquicordDevs.voidbbg],
+    authors: [Devs.JacobTm, CoffecordDevs.voidbbg],
     commands: [
         {
             name: "dissatisfaction",

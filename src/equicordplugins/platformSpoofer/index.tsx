@@ -8,7 +8,7 @@ import "@equicordplugins/_misc/styles.css";
 
 import { definePluginSettings } from "@api/Settings";
 import { Paragraph } from "@components/Paragraph";
-import { EquicordDevs } from "@utils/constants";
+import { CoffecordDevs } from "@utils/constants";
 import definePlugin, { OptionType } from "@utils/types";
 import { UserStore } from "@webpack/common";
 
@@ -50,7 +50,7 @@ const settings = definePluginSettings({
 export default definePlugin({
     name: "PlatformSpoofer",
     description: "Spoof what platform or device you're on",
-    authors: [EquicordDevs.Drag],
+    authors: [CoffecordDevs.Drag],
     settingsAboutComponent: () => <>
         <Paragraph className="plugin-warning">
             We can't guarantee this plugin won't get you warned or banned.
