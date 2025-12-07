@@ -2,7 +2,7 @@
 
 # Configuration
 INSTALLER_PATH="$HOME/.equilotl"
-GITHUB_URL="https://github.com/Equicord/Equilotl/releases/latest/download/EquilotlCli-Linux"
+GITHUB_URL="https://github.com/CoffeCord/coffeCordpkg/releases/latest/download/CoffeCordCli-Linux"
 PRIVILEGE_CMDS=("sudo" "doas")
 DEBUG=false
 LOG_FILE="$(dirname "$(realpath "$0")")/equicordinstalldebug.log"

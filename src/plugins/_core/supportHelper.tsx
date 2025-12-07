@@ -297,7 +297,7 @@ export default definePlugin({
 
                         <Paragraph className={Margins.top8}>
                             We only provide support for <Link href="https://github.com/CoffeCord/CoffeCord">official builds</Link>.
-                            Either <Link href="https://github.com/Equicord/Equilotl">switch to an official build</Link> or figure your issue out yourself.
+                            Either <Link href="https://github.com/CoffeCord/coffeCordpkg">switch to an official build</Link> or figure your issue out yourself.
                         </Paragraph>
 
                         <BaseText size="md" weight="bold" className={Margins.top8}>You will be banned from receiving support if you ignore this rule.</BaseText>
